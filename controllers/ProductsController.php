@@ -12,6 +12,17 @@ class ProductsController
         $this->productsService = new ProductsService($productsModel);
     }
 
+    private function validateFields($data, $requiredFields)
+    {
+        $errors = [];
+        foreach ($requiredFields as $field) {
+            if (empty($data[$field])) {
+                $errors[] = ucfirst(str_replace('_', ' ', $field)) . " is required";
+            }
+        }
+        return $errors;
+    }
+
     public function readProducts()
     {
         $products = $this->productsService->fetchAllProducts();
@@ -21,6 +32,13 @@ class ProductsController
     public function addProducts()
     {
         $data = json_decode(file_get_contents("php://input"), true);
+       $requiredFields = ['product_id', 'product_name', 'price', 'stock'];
+        $errors = $this->validateFields($data, $requiredFields);
+
+        if (!empty($errors)) {
+            return json_encode(array("message" => "Validation errors", "errors" => $errors));
+        }
+
         $result = $this->productsService->addProducts($data);
         if ($result)
         {
@@ -30,12 +48,18 @@ class ProductsController
         {
             return json_encode(array("message"=>"Insert not success"));
         }
-        // return json_encode(["message"=>$result]);
     }
 
     public function updateProducts()
     {
         $data = json_decode(file_get_contents("php://input"), true);
+        $requiredFields = ['product_id', 'product_name', 'price', 'stock'];
+        $errors = $this->validateFields($data, $requiredFields);
+
+        if (!empty($errors)) {
+            return json_encode(array("message" => "Validation errors", "errors" => $errors));
+        }
+
         $result = $this->productsService->updateProducts($data);
         if ($result)
         {
@@ -51,6 +75,13 @@ class ProductsController
     {
         $data = json_decode(file_get_contents("php://input"), true);
         $product_id = $data['product_id'];
+        $requiredFields = ['product_id'];
+        $errors = $this->validateFields($data, $requiredFields);
+
+        if (!empty($errors)) {
+            return json_encode(array("message" => "Validation errors", "errors" => $errors));
+        }
+
         $result = $this->productsService->deleteProducts($product_id);
         if ($result)
         {
