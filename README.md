@@ -1,6 +1,10 @@
 # 🛍️ Sistem Aplikasi Kasir Sederhana
+- Nama : I Komang Raditia Galang Buana
+- NIM  : 220040092
+- Kelas  : UG224
+- Ujian Akhir Semester Back-End Web Development
 
-## 📖 Brainstorming
+## 💡Brainstorming
 
 ## 📜 Deskripsi Singkat
 Aplikasi kasir sederhana ini adalah sebuah sistem berbasis web yang memungkinkan pengelolaan data member, produk, dan penjualan untuk sebuah toko atau usaha kecil. Sistem ini dibangun menggunakan PHP dan MySQL, dengan struktur MVC (Model-View-Controller) yang terorganisir. 
@@ -28,6 +32,7 @@ Aplikasi kasir sederhana ini adalah sebuah sistem berbasis web yang memungkinkan
 
 ### Penjelasan
 ![image](https://github.com/galangbuana/Uas-AplikasiKasir-Backend/assets/162245644/407eaeaa-6ef1-480e-9d8d-6b68b006b3d8)
+
 Penjelasan singkat mengenai  gambaran arsitektur teknologi yang digunakan:
 
 - **User Interface**: Tampilan antarmuka yang memungkinkan pengguna berinteraksi langsung dengan sistem melalui web browser.
@@ -37,7 +42,8 @@ Penjelasan singkat mengenai  gambaran arsitektur teknologi yang digunakan:
 - **REST API**: REST API bertindak sebagai jembatan antara tampilan antarmuka pengguna (front-end) dan logika bisnis di balik layar (back-end). API ini menerima permintaan dari server web, melakukan operasi yang diperlukan, dan memberikan respons yang sesuai.
   
 ## 🗃️ ERD
-![Untitled Diagram-Page-14 drawio (1)](https://github.com/galangbuana/Uas-AplikasiKasir-Backend/assets/162245644/26df6858-b6dd-49c6-b3db-0db215c7e907)
+![Untitled Diagram-Page-14 drawio (4)](https://github.com/galangbuana/Uas-AplikasiKasir-Backend/assets/162245644/35e69681-e0f9-48c2-be50-3ed23827a141)
+
 
 Dengan ERD ini, hubungan antar tabel dalam sistem aplikasi kasir sederhana dapat dipahami dengan jelas.
 
@@ -68,7 +74,7 @@ Relasi antar tabel-tabel dalam desain database diatas:
 - **Tabel Members** dan **Tabel Sales** juga memiliki relasi one-to-many. Satu member bisa melakukan banyak penjualan, tetapi setiap penjualan hanya terkait dengan satu member. Ini diwakili oleh `id_member` yang ada di kedua tabel sebagai Foreign Key di Tabel Penjualan.
 - **Tabel Products** tidak langsung terhubung dengan **Tabel Member** melalui relasi database. Namun, mereka terhubung secara tidak langsung melalui Tabel Penjualan. Informasi ini membantu dalam melacak produk apa yang dibeli oleh member tertentu.
 
-## Struktur Proyek
+## ⚙️ Struktur Proyek
 ```sh
 toko-serba-ada/
 ├── app.php
@@ -135,7 +141,7 @@ Berikut adalah deskripsi singkat dari setiap file dan direktori:
 ## 📝 Petunjuk Penggunaan
 Langkah-langkah untuk menginstal proyek ini secara lokal:
 
-## Instalasi
+## 🔧 Instalasi
 
 1. Clone repositori ini:
     ```sh
@@ -152,14 +158,14 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
   - Jalankan XAMPP dan verifikasi bahwa layanan Apache dan MySQL aktif.
   - Tunggu hingga server web lokal dan database MySQL siap digunakan.
     
-4. Import Database untuk sistem aplikasi kasir sederhana:
+4. **Import Database untuk sistem aplikasi kasir sederhana:**
   - Buka phpMyAdmin, alat bantu web untuk mengelola database MySQL.
   - Pilih database yang ingin Anda gunakan atau buat database baru dengan nama yang sesuai.
   - Impor file `db_kasir.sql` ke dalam database yang dipilih.
   - Alternatively, jalankan query SQL dari file `db_kasir.sql` untuk membuat database dan tabel yang diperlukan secara manual.
   - Pastikan proses import database berhasil dan semua tabel dan data telah termuat dengan benar.
 
-5. Buat file `.env` di direktori root proyek dan tambahkan konfigurasi database Anda:
+5. **Buat file `.env` di direktori root proyek dan tambahkan konfigurasi database Anda:**
     ```sh
     DB_HOST=localhost
     DB_NAME=kasir
@@ -167,12 +173,13 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
     DB_PASSWORD=admin123
     ```
 
-6. **Siapkan Postman untuk Menguji API**
+6. **Siapkan Postman untuk Menguji API:**
    Unduh Postman dari situs resminya [klik disini](https://www.postman.com/downloads/).
 
-## Contoh Penggunaan
+## 🌐 Contoh Penggunaan
 
 ### Manajemen Member
+**URL:** http://localhost/uas-kasir-backend/api/members
 
 **1. Membaca semua data member**
    - **Permintaan:**
@@ -256,7 +263,8 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
      }
      ```
 
-### Produk
+### Manajemen Produk
+**URL:** http://localhost/uas-kasir-backend/api/products
 
 **1. Membaca semua produk**
    - **Permintaan:**
@@ -337,7 +345,8 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
      }
      ```
 
-### Penjualan
+### Manajemen Penjualan
+**URL:** http://localhost/uas-kasir-backend/api/sales
 
 **1. Membaca semua penjualan**
    - **Permintaan:**
@@ -402,3 +411,42 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
          "message": "Delete success"
      }
      ```
+
+## 🔍 Refleksi Diri terhadap Proyek Pengembangan Aplikasi Kasir Sederhana
+
+Dalam proses pengembangan aplikasi kasir sederhana ini, terdapat beberapa tantangan dan kesulitan yang saya hadapi, serta berbagai strategi yang saya gunakan untuk mengatasinya.
+
+### Tantangan dan Kesulitan
+
+1. **Desain Arsitektur dan Pemisahan Tanggung Jawab**
+   - **Tantangan**: Merancang struktur proyek yang modular dan mudah dikelola membutuhkan banyak pertimbangan, terutama dalam hal pemisahan tanggung jawab antar komponen (controller, model, service).
+   - **Cara Mengatasi**: Saya memutuskan untuk menerapkan pola arsitektur MVC (Model-View-Controller) yang jelas dan terstruktur. Ini membantu menjaga agar setiap komponen memiliki tanggung jawab spesifik dan meminimalkan keterikatan antara bagian-bagian yang berbeda dari kode.
+
+2. **Pengelolaan Koneksi Database**
+   - **Tantangan**: Mengatur koneksi database yang aman dan efisien merupakan tantangan, terutama dalam hal mengelola konfigurasi dan koneksi ulang.
+   - **Cara Mengatasi**: Saya menggunakan file `.env` untuk menyimpan konfigurasi lingkungan secara aman. Selain itu, saya merancang kelas `Database` dengan metode `getConnection()` yang memastikan hanya satu koneksi yang aktif pada satu waktu, yang membantu mengurangi beban pada server database.
+
+3. **Penulisan Ulang URL dengan `.htaccess`**
+   - **Tantangan**: Mengkonfigurasi penulisan ulang URL untuk mengarahkan semua permintaan melalui satu titik masuk (`app.php`) tidaklah mudah, terutama dalam menangani berbagai skenario permintaan.
+   - **Cara Mengatasi**: Saya mempelajari dokumentasi `.htaccess` dan melakukan beberapa percobaan hingga menemukan aturan yang tepat untuk mengarahkan semua permintaan ke `app.php` tanpa mengganggu akses ke file dan direktori statis.
+
+4. **Validasi dan Sanitasi Input**
+   - **Tantangan**: Menangani validasi dan sanitasi input pengguna untuk mencegah SQL injection dan serangan XSS merupakan aspek kritis dalam pengembangan aplikasi web.
+   - **Cara Mengatasi**: Saya menggunakan PDO dengan prepared statements untuk menghindari SQL injection. Selain itu, saya menambahkan lapisan validasi di tingkat service untuk memastikan bahwa semua input yang diterima sesuai dengan kriteria yang diharapkan sebelum diteruskan ke model.
+
+5. **Pengujian dan Debugging**
+   - **Tantangan**: Mengidentifikasi dan memperbaiki bug, serta memastikan bahwa semua fungsionalitas bekerja sebagaimana mestinya, merupakan proses yang memakan waktu dan menantang.
+   - **Cara Mengatasi**: Saya menerapkan pengujian unit pada metode-metode kunci di service dan model. Selain itu, saya menggunakan alat debugging PHP dan menambahkan log pada titik-titik penting dalam aplikasi untuk memudahkan identifikasi masalah.
+
+6. **Performance dan Scalability**
+   - **Tantangan**: Memastikan aplikasi berjalan efisien dan dapat diskalakan untuk menangani jumlah pengguna yang banyak.
+   - **Cara Mengatasi**: Saya merancang aplikasi dengan prinsip-prinsip terbaik dalam pengelolaan resource, seperti menggunakan koneksi database yang efisien dan mengoptimalkan query SQL. Selain itu, saya mempertimbangkan penggunaan caching untuk mengurangi beban pada database.
+
+### Pembelajaran dan Pengembangan Diri
+
+Selama proses pengembangan ini, saya banyak belajar tentang pentingnya perencanaan yang matang dan desain arsitektur yang baik. Saya juga menyadari bahwa pengelolaan konfigurasi lingkungan dan keamanan aplikasi merupakan aspek yang sangat penting yang tidak boleh diabaikan. Selain itu, saya mendapatkan pengalaman berharga dalam menggunakan berbagai alat dan teknik untuk pengujian dan debugging, yang sangat membantu dalam memastikan kualitas dan stabilitas aplikasi.
+
+Ke depannya, saya berharap dapat menerapkan pengalaman dan pengetahuan yang saya peroleh dari proyek ini untuk proyek-proyek lainnya, serta terus mengembangkan keterampilan saya dalam pengembangan aplikasi web yang lebih kompleks dan canggih.
+
+
+*Galang Buana*
