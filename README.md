@@ -189,15 +189,78 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Tanggapan:**
      ```json
      {
-         "records": [
-             {
-                 "member_id": "1",
-                 "member_name": "John Doe",
-                 "phone_number": "123456789",
-                 "email": "john@example.com",
-                 "join_date": "2023-01-01"
-             }
-         ]
+        "records": [
+            {
+                "member_id": "2023001",
+                "member_name": "John Doe",
+                "phone_number": "081234567890",
+                "email": "john.doe@example.com",
+                "join_date": "2023-01-01"
+            },
+            {
+                "member_id": "2023002",
+                "member_name": "Jane Smith",
+                "phone_number": "081298765432",
+                "email": "jane.smith@example.com",
+                "join_date": "2023-02-15"
+            },
+            {
+                "member_id": "2023003",
+                "member_name": "Alice Johnson",
+                "phone_number": "081234598765",
+                "email": "alice.johnson@example.com",
+                "join_date": "2023-03-10"
+            },
+            {
+                "member_id": "2023004",
+                "member_name": "Bob Brown",
+                "phone_number": "081234567812",
+                "email": "bob.brown@example.com",
+                "join_date": "2023-04-20"
+            },
+            {
+                "member_id": "2023005",
+                "member_name": "Charlie Davis",
+                "phone_number": "081234598712",
+                "email": "charlie.davis@example.com",
+                "join_date": "2023-05-25"
+            },
+            {
+                "member_id": "2023006",
+                "member_name": "David Evans",
+                "phone_number": "081234567845",
+                "email": "david.evans@example.com",
+                "join_date": "2023-06-30"
+            },
+            {
+                "member_id": "2023007",
+                "member_name": "Eve Foster",
+                "phone_number": "081234598734",
+                "email": "eve.foster@example.com",
+                "join_date": "2023-07-18"
+            },
+            {
+                "member_id": "2023008",
+                "member_name": "Frank Green",
+                "phone_number": "081234567891",
+                "email": "frank.green@example.com",
+                "join_date": "2023-08-22"
+            },
+            {
+                "member_id": "2023009",
+                "member_name": "Grace Hill",
+                "phone_number": "081234598756",
+                "email": "grace.hill@example.com",
+                "join_date": "2023-09-14"
+            },
+            {
+                "member_id": "2023010",
+                "member_name": "Hannah Ivy",
+                "phone_number": "081234567823",
+                "email": "hannah.ivy@example.com",
+                "join_date": "2023-10-05"
+            }
+        ]
      }
      ```
 
@@ -209,11 +272,11 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "member_id": "2",
-         "member_name": "Jane Doe",
-         "phone_number": "987654321",
-         "email": "jane@example.com",
-         "join_date": "2023-02-01"
+         "member_id": "2023011",
+         "member_name": "Raplh Lauren",
+         "phone_number": "081432765090",
+         "email": "raplh.lauren@example.com",
+         "join_date": "2023-01-01"
      }
      ```
    - **Tanggapan:**
@@ -231,11 +294,11 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "member_id": "2",
-         "member_name": "Jane Smith",
-         "phone_number": "987654321",
-         "email": "jane@example.com",
-         "join_date": "2023-02-01"
+         "member_id": "2023011",
+         "member_name": "Aurelia Laura",
+         "phone_number": "081432765090",
+         "email": "aurelia.laura@example.com",
+         "join_date": "2023-01-01"
      }
      ```
    - **Tanggapan:**
@@ -253,7 +316,7 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "member_id": "2"
+         "member_id": "2023011"
      }
      ```
    - **Tanggapan:**
@@ -274,14 +337,68 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Tanggapan:**
      ```json
      {
-         "records": [
-             {
-                 "product_id": "1",
-                 "product_name": "Product A",
-                 "price": "1000",
-                 "stock": "10"
-             }
-         ]
+        "records": [
+            {
+                "product_id": "124001",
+                "product_name": "Rice",
+                "price": "50000.00",
+                "stock": "100"
+            },
+            {
+                "product_id": "124002",
+                "product_name": "Cooking Oil",
+                "price": "30000.00",
+                "stock": "200"
+            },
+            {
+                "product_id": "124003",
+                "product_name": "Sugar",
+                "price": "25000.00",
+                "stock": "150"
+            },
+            {
+                "product_id": "124004",
+                "product_name": "Shampoo",
+                "price": "15000.00",
+                "stock": "75"
+            },
+            {
+                "product_id": "124005",
+                "product_name": "Toothpaste",
+                "price": "10000.00",
+                "stock": "50"
+            },
+            {
+                "product_id": "124006",
+                "product_name": "Detergent",
+                "price": "20000.00",
+                "stock": "60"
+            },
+            {
+                "product_id": "124007",
+                "product_name": "Dishwashing Liquid",
+                "price": "18000.00",
+                "stock": "80"
+            },
+            {
+                "product_id": "124008",
+                "product_name": "Bread",
+                "price": "12000.00",
+                "stock": "90"
+            },
+            {
+                "product_id": "124009",
+                "product_name": "Milk",
+                "price": "15000.00",
+                "stock": "110"
+            },
+            {
+                "product_id": "124010",
+                "product_name": "Coffee",
+                "price": "20000.00",
+                "stock": "120"
+            }
+        ]
      }
      ```
 
@@ -293,10 +410,10 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "product_id": "2",
-         "product_name": "Product B",
-         "price": "2000",
-         "stock": "20"
+         "product_id": "124011",
+         "product_name": "Soap",
+         "price": "8000.00",
+         "stock": "40"
      }
      ```
    - **Tanggapan:**
@@ -314,10 +431,10 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "product_id": "2",
-         "product_name": "Product B Updated",
-         "price": "2500",
-         "stock": "25"
+         "product_id": "124011",
+         "product_name": "Salt",
+         "price": "8000.00",
+         "stock": "40"
      }
      ```
    - **Tanggapan:**
@@ -335,7 +452,7 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "product_id": "2"
+         "product_id": "124011"
      }
      ```
    - **Tanggapan:**
@@ -356,17 +473,98 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Tanggapan:**
      ```json
      {
-         "records": [
-             {
-                 "sales_id": "1",
-                 "product_id": "1",
-                 "member_id": "1",
-                 "sale_date": "2023-01-01",
-                 "quantity": "1",
-                 "selling_price": "1000",
-                 "total_price": "1000"
-             }
-         ]
+        "records": [
+            {
+                "sales_id": "1",
+                "product_id": "124001",
+                "member_id": "2023001",
+                "sale_date": "2024-06-22 10:30:00",
+                "quantity": "1",
+                "selling_price": "50000.00",
+                "total_price": "50000.00"
+            },
+            {
+                "sales_id": "2",
+                "product_id": "124002",
+                "member_id": "2023002",
+                "sale_date": "2024-06-22 11:00:00",
+                "quantity": "2",
+                "selling_price": "30000.00",
+                "total_price": "60000.00"
+            },
+            {
+                "sales_id": "3",
+                "product_id": "124003",
+                "member_id": "2023003",
+                "sale_date": "2024-06-23 14:45:00",
+                "quantity": "1",
+                "selling_price": "25000.00",
+                "total_price": "25000.00"
+            },
+            {
+                "sales_id": "4",
+                "product_id": "124004",
+                "member_id": "2023004",
+                "sale_date": "2024-06-23 15:00:00",
+                "quantity": "1",
+                "selling_price": "15000.00",
+                "total_price": "15000.00"
+            },
+            {
+                "sales_id": "5",
+                "product_id": "124005",
+                "member_id": "2023005",
+                "sale_date": "2024-06-24 09:30:00",
+                "quantity": "1",
+                "selling_price": "10000.00",
+                "total_price": "10000.00"
+            },
+            {
+                "sales_id": "6",
+                "product_id": "124006",
+                "member_id": "2023006",
+                "sale_date": "2024-06-24 10:45:00",
+                "quantity": "1",
+                "selling_price": "20000.00",
+                "total_price": "20000.00"
+            },
+            {
+                "sales_id": "7",
+                "product_id": "124007",
+                "member_id": "2023007",
+                "sale_date": "2024-06-25 11:15:00",
+                "quantity": "1",
+                "selling_price": "18000.00",
+                "total_price": "18000.00"
+            },
+            {
+                "sales_id": "8",
+                "product_id": "124008",
+                "member_id": "2023008",
+                "sale_date": "2024-06-25 12:30:00",
+                "quantity": "2",
+                "selling_price": "12000.00",
+                "total_price": "24000.00"
+            },
+            {
+                "sales_id": "9",
+                "product_id": "124009",
+                "member_id": "2023009",
+                "sale_date": "2024-06-26 13:00:00",
+                "quantity": "1",
+                "selling_price": "15000.00",
+                "total_price": "15000.00"
+            },
+            {
+                "sales_id": "10",
+                "product_id": "124010",
+                "member_id": "2023010",
+                "sale_date": "2024-06-26 14:30:00",
+                "quantity": "1",
+                "selling_price": "20000.00",
+                "total_price": "20000.00"
+            }
+        ]
      }
      ```
 
@@ -378,13 +576,13 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "sales_id": "2",
-         "product_id": "2",
-         "member_id": "2",
-         "sale_date": "2023-02-01",
+         "sales_id": "11",
+         "product_id": "124011",
+         "member_id": "2023011",
+         "sale_date": "2024-06-22 10:30:00",
          "quantity": "2",
-         "selling_price": "2000",
-         "total_price": "4000"
+         "selling_price": "8000.00",
+         "total_price": "16000.00"
      }
      ```
    - **Tanggapan:**
@@ -402,7 +600,7 @@ Langkah-langkah untuk menginstal proyek ini secara lokal:
    - **Payload:**
      ```json
      {
-         "sales_id": "2"
+         "sales_id": "11"
      }
      ```
    - **Tanggapan:**
